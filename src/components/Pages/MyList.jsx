@@ -17,8 +17,8 @@ const MyList = () => {
     }, [user])
     return (
         <div className="">
-            <h1 className="text-center text-4xl font-bold my-6">MY PRODUCTS</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-4 my-4">
+            <h1 className="text-center text-4xl font-bold my-6 text-amber-950">MY PRODUCTS</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-2 md:mx-16 my-4 md:my-10">
                 {
                     myProducts.map((product) => <ProductCard product={product} state={location.pathname} />)
                 }

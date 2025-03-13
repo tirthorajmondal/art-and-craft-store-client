@@ -71,7 +71,7 @@ const Navbar = () => {
 
                 </div>
                 {/* Mobile Menu  */}
-                <div className="relative">
+                <div className="relative z-10">
                     <button className="text-[#3A3A3A] md:hidden" onClick={toggleMenu}>
                         {isOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
                     </button>
