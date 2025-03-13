@@ -1,9 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const UpdateInfo = () => {
     const product = useLoaderData()
+    const navigate = useNavigate()
     const { customization,
         image,
         item_name,
@@ -16,7 +18,6 @@ const UpdateInfo = () => {
     const {
         register,
         handleSubmit,
-        reset,
         formState: { errors },
     } = useForm({
         defaultValues: {
@@ -34,8 +35,7 @@ const UpdateInfo = () => {
     });
 
     const onSubmit = (formInfo) => {
-        console.log(formInfo);
-        fetch(`http://localhost:5000/product/${product._id}`, {
+        fetch(`https://art-and-craft-server-by-tirtho.vercel.app/product/${product._id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
@@ -44,10 +44,16 @@ const UpdateInfo = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount > 0) {
-                    alert('Product Updated')
-                    reset();
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Item Updated Successfully",
+                        width: 350,
+                        showConfirmButton: false,
+                        timer: 1000
+                    });
+                    navigate(`/item/${product._id}`)
                 }
             })
 

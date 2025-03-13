@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AddCraftItem = () => {
     const { user } = useContext(AuthContext);
@@ -12,10 +13,8 @@ const AddCraftItem = () => {
     } = useForm();
 
     const onSubmit = (formInfo) => {
-        console.log(formInfo);
         formInfo.email = user.email;
-        console.log(formInfo);
-        fetch('http://localhost:5000/products', {
+        fetch('https://art-and-craft-server-by-tirtho.vercel.app/products', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -25,7 +24,14 @@ const AddCraftItem = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('Product added')
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Item Added Successfully",
+                        width: 350,
+                        showConfirmButton: false,
+                        timer: 1000
+                    });
                     reset();
                 }
             })
