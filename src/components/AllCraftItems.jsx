@@ -14,8 +14,8 @@ const AllCraftItems = () => {
     }, [])
 
     return (
-        <div className=''>
-            <h2 className="text-center text-4xl my-10 underline">Total {products.length} Items</h2>
+        <div className='bg-[#C2A77D4A] pt-10'>
+            <h2 className="text-center text-4xl mb-10 font-bold text-amber-950">All Items</h2>
             <div className="grid grid-cols-2 gap-8 px-16">
                 {
                     products.map(product => <ProductCard product={product} state={location.pathname} />)

@@ -20,8 +20,8 @@ const Home = () => {
         <div className='[bg-[#C2AD746A]]'>
             <Slider />
             <div className="mx-6 mt-12 bg-white px-3 pb-12">
-                <h3 className='text-4xl text-center font-bold my-6'>Top Items</h3>
-                <div className='grid grid-cols-2 gap-5'>
+                <h3 className='text-4xl text-center font-bold my-5 mb-8  text-amber-900'>Top Items</h3>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                     {
                         topProducts.map(top => <ProductCard product={top} />)
                     }
@@ -29,7 +29,7 @@ const Home = () => {
             </div>
             <SubCategroySection />
             <div className="flex">
-                <span className="bg-[#D2691E] p-5">Color</span>
+                <span className="bg-[#d2691ea1] p-5">Color</span>
                 <span className="bg-[#3A3A3A] p-5">Color</span>
                 <span className="bg-[#F5F5DC] p-5">Color</span>
                 <span className="bg-[#6B8E23] p-5">Color</span>

@@ -40,7 +40,7 @@ const Details = () => {
         <div className="px-32  py-20 flex space-x-16 items-center bg-[#C2A77D4A]">
             <div className=" flex justify-center items-center w-1/2 relative">
                 <img src={product.image} className=" w-full h-[450px] border border-[#C2A77D] rounded-xl p-px" alt={product.item_name + "'s image"} />
-                <p className="absolute right-3 bottom-8 text-xl bg-amber-700 text-white  px-2 py-0.5 hover:-translate-x-3 duration-[500ms]">
+                <p className="absolute right-3 bottom-8 text-xl bg-amber-700 text-white italic px-2 py-0.5 hover:-translate-x-3 duration-[500ms] before:content-[''] before:w-20 before:h-20 before:bg-black">
                     {
                         product.stock_status === 'made_to_order' && 'Made To Order'
                     }

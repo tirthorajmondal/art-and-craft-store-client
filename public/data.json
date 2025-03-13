@@ -1,0 +1,118 @@
+[
+    {
+        "subcategory_Name": "Wooden Furniture & Sculptures",
+        "items": [
+            {
+                "image": "https://example.com/wooden-chair-table.jpg",
+                "item_name": "Hand-Carved Wooden Chairs & Tables",
+                "short_description": "Premium hand-carved wooden chairs and tables, crafted for durability and elegance.",
+                "price": 12500,
+                "rating": 4.8,
+                "customization": "Yes",
+                "processing_time": "10-15 days",
+                "stockStatus": "Limited Stock"
+            },
+            {
+                "image": "https://example.com/wooden-wall-sculpture.jpg",
+                "item_name": "Wooden Wall Sculptures & Art Pieces",
+                "short_description": "Exquisite wooden wall sculptures with intricate carvings, perfect for home décor.",
+                "price": 4500,
+                "rating": 4.7,
+                "customization": "Yes",
+                "processing_time": "7-10 days",
+                "stockStatus": "In Stock"
+            }
+        ]
+    },
+    {
+        "subcategory_Name": "Wooden Home Decor",
+        "items": [
+            {
+                "image": "https://example.com/wooden-wall-hanging.jpg",
+                "item_name": "Wooden Wall Hangings & Frames",
+                "short_description": "Handcrafted wooden wall hangings and frames with traditional designs.",
+                "price": 1800,
+                "rating": 4.6,
+                "customization": "Yes",
+                "processing_time": "4-6 days",
+                "stockStatus": "In Stock"
+            },
+            {
+                "image": "https://example.com/wooden-flower-vase.jpg",
+                "item_name": "Wooden Flower Vases & Showpieces",
+                "short_description": "Elegant wooden flower vases and decorative showpieces for a natural touch.",
+                "price": 1300,
+                "rating": 4.5,
+                "customization": "No",
+                "processing_time": "3-5 days",
+                "stockStatus": "In Stock"
+            }
+        ]
+    },
+    {
+        "subcategory_Name": "Wooden Utensils and Kitchenware",
+        "items": [
+            {
+                "image": "https://example.com/wooden-utensils.jpg",
+                "item_name": "Wooden Spoons, Bowls & Plates",
+                "short_description": "Eco-friendly wooden spoons, bowls, and plates for a rustic dining experience.",
+                "price": 950,
+                "rating": 4.7,
+                "customization": "No",
+                "processing_time": "3-5 days",
+                "stockStatus": "In Stock"
+            },
+            {
+                "image": "https://example.com/wooden-spice-container.jpg",
+                "item_name": "Handcrafted Wooden Spice Containers",
+                "short_description": "Handcrafted wooden spice containers with airtight lids to keep spices fresh.",
+                "price": 1400,
+                "rating": 4.6,
+                "customization": "Yes",
+                "processing_time": "5-7 days",
+                "stockStatus": "Limited Stock"
+            }
+        ]
+    },
+    {
+        "subcategory_Name": "Jute Home Decor",
+        "items": [
+            {
+                "image": "https://example.com/jute-wall-hanging.jpg",
+                "item_name": "Jute Wall Hangings & Rugs",
+                "short_description": "Handwoven jute wall hangings and rugs for a natural aesthetic.",
+                "price": 2200,
+                "rating": 4.8,
+                "customization": "Yes",
+                "processing_time": "6-9 days",
+                "stockStatus": "In Stock"
+            },
+            {
+                "image": "https://example.com/jute-plant-hanger.jpg",
+                "item_name": "Jute Plant Hangers & Lampshades",
+                "short_description": "Eco-friendly jute plant hangers and lampshades for modern interiors.",
+                "price": 1700,
+                "rating": 4.7,
+                "customization": "No",
+                "processing_time": "5-7 days",
+                "stockStatus": "In Stock"
+            }
+        ]
+    },
+    {
+        "subcategory_Name": "Jute Kitchenware & Utensils",
+        "items": [
+            
+            {
+                "image": "https://example.com/jute-storage-basket.jpg",
+                "item_name": "Jute Storage Baskets & Organizers",
+                "short_description": "Stylish jute storage baskets and organizers for a clutter-free home.",
+                "price": 1800,
+                "rating": 4.7,
+                "customization": "Yes",
+                "processing_time": "4-6 days",
+                "stockStatus": "In Stock"
+            }
+        ]
+    }
+]
