@@ -38,7 +38,7 @@ const Login = () => {
 
     if (!user) {
         return (
-            <div className="h-[calc(100vh-150px)] flex justify-center items-center">
+            <div className="min-h-[calc(100vh-150px)] flex justify-center items-center bg-[#C2AD746A]">
 
                 <div className="flex flex-col p-4 border-2">
                     <form

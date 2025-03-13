@@ -39,11 +39,11 @@ const AddCraftItem = () => {
     };
 
     return (
-        <div className="mx-2">
-            <h2 className="text-center font-bold text-4xl mt-3">Add Your Product</h2>
+        <div className="bg-[#C2AD746A] pt-4 pb-16">
+            <h2 className="text-center font-bold text-4xl my-4">Add Your Product</h2>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="w-full md:w-3/4 lg:w-1/2  rounded-md  md:mx-auto my-4 bg-slate-300 grid md:grid-cols-2 p-4 gap-x-5 gap-y-2">
+                className="w-full md:w-3/4 lg:w-1/2  rounded-md md:mx-auto bg-slate-300 grid md:grid-cols-2 p-4 md:p-8 gap-x-5 gap-y-2">
                 {/* Item Name */}
                 <div>
                     <label className="block text-[#3A3A3A] font-semibold">Item Name</label>

@@ -31,7 +31,7 @@ const SubCategroySection = () => {
     ];
 
     return (
-        <div className=" mx-3 my-12">
+        <div className=" mx-3 pb-12">
             <h3 className='text-4xl text-center font-bold my-5 mb-8  text-amber-900'>All Categories</h3>
             <div className="flex gap-6 flex-wrap justify-center items-center">
                 {

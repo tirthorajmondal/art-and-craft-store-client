@@ -3,9 +3,11 @@ import Slider from '../Slider';
 import SubCategoryCard from '../SubCategoryCard';
 import SubCategroySection from '../SubCategroySection';
 import ProductCard from '../ProductCard';
+import { FadeLoader } from 'react-spinners';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
-
+    const location = useLocation()
     const [topProducts, setTopProducts] = useState([])
 
     useEffect(() => {
@@ -17,13 +19,21 @@ const Home = () => {
     }, [])
 
     return (
-        <div className='[bg-[#C2AD746A]]'>
+        <div className='bg-[#C2AD746A]'>
             <Slider />
-            <div className="mx-4 mt-12 bg-white md:px-3 pb-12">
+            <div className="mx-4 mt-10 md:px-3 pb-12">
                 <h3 className='text-4xl text-center font-bold my-5 mb-8  text-amber-900'>Top Items</h3>
+                {topProducts.length === 0 && <FadeLoader
+                    color="#643e06"
+                    height={15}
+                    loading
+                    margin={0}
+                    width={10}
+                    className="mx-auto"
+                />}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                     {
-                        topProducts.map(top => <ProductCard product={top} />)
+                        topProducts.map(top => <ProductCard product={top} state={location.pathname} />)
                     }
                 </div>
             </div>

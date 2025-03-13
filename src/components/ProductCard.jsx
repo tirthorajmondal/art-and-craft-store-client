@@ -14,7 +14,7 @@ const ProductCard = ({ product, state }) => {
                 <p className="text-base md:text-xl font-semibold text-amber-800 md:mb-3">Price : {product.price}$</p>
 
                 <Link state={state} to={`/item/${product._id}`}>
-                    <button className="btn btn-sm md:btn-md px-3 py-1.5 bg-[#d2691ef3] hover:bg-[#d2691ea1] text-amber-950 hover:border-[0.5px] hover:border-amber-950">Details</button>
+                    <button className="btn btn-sm md:btn-md px-3 py-1.5 bg-[#d2691ef3]  hover:bg-[#d2691ea1] text-amber-950 border-0 hover:border-[0.5px] hover:border-amber-950">Details</button>
                 </Link>
             </div>
         </div >
